@@ -1,0 +1,348 @@
+{
+	"info": {
+		"_postman_id": "4466723e-9a50-4e4b-bb09-5874fd1e55af",
+		"name": "Dr kelshi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18450589",
+		"_collection_link": "https://www.postman.com/ultra-tech/workspace/file-manager/collection/18450589-4466723e-9a50-4e4b-bb09-5874fd1e55af?action=share&source=collection_link&creator=18450589"
+	},
+	"item": [
+		{
+			"name": "Product",
+			"item": [
+				{
+					"name": "All products",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{localhost}}/products/?page=1",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"products",
+								""
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Show product",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{localhost}}/products/6",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"products",
+								"6"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Supplier",
+			"item": [
+				{
+					"name": "All suppliers",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{localhost}}/suppliers/",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"suppliers",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Category",
+			"item": [
+				{
+					"name": "All categorires",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Show category",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{localhost}}/categories/6",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"categories",
+								"6"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Pages",
+			"item": [
+				{
+					"name": "Home",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{localhost}}/home",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"home"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Shop",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{localhost}}/shop?page=1",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"shop"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "About us",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{localhost}}/about",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"about"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Contact us",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Education",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{localhost}}/educations",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"educations"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Message",
+			"item": [
+				{
+					"name": "Send message",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "first_name",
+									"value": "baraa",
+									"type": "text"
+								},
+								{
+									"key": "last_name",
+									"value": "aldomani",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "om",
+									"type": "text"
+								},
+								{
+									"key": "message",
+									"value": "just message",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{localhost}}/message/send",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"message",
+								"send"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "General data",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{localhost}}/general-data",
+					"host": [
+						"{{localhost}}"
+					],
+					"path": [
+						"general-data"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
